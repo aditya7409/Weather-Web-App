@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: bisque
+  }
+  img{
+      height: 411px;
+  }
+  .main_header_left{
+      background: black;
+      border: 2px solid white;
+      border-radius: 14px;
+      padding: 0;
+      text-align: center;
+      height: 55vh;
+  }
+  .main_header_right{
+    margin-left: 10px;
+    border-radius: 12px;
+    border: 2px solid black;
+    padding: 0;
+  }
+  .main_header{
+    margin-top: 8vh;
+  }
+  footer{
+    margin-top: auto;
+    text-align: center;
+    background: black;
+    color: white;
+  }
+  footer p{
+    margin: 0;
+  }
+  #btn{
+    margin-bottom: 60px;
+  }
+  .contents{
+    margin-top: 80px;
+  }
+  .nav-item a:hover{
+    color: red !important;
+  }
+  .fa-snowflake{
+    transition: all linear;
+    animation: rot 2s linear infinite;
+    color:red;
+  }
+  .main_header_left button{
+    box-shadow: 0 8px 6px -6px #000 !important;
+  }
+  .main_header_left button:hover{
+    box-shadow: 0 8px 6px -6px red !important;
+  }
+  @keyframes rot{
+    0%{
+      transform:rotate(0deg);
+    }
+    100%{
+      transform:rotate(360deg);
+    }
+  }
+  @media only screen and (max-width: 766px){
+    .main_header_right{
+      margin-left: 0;
+      margin-bottom: 4px;
+    }
+    .main_header{
+      margin: 0;
+    }
+    .main_header_left{
+      margin-bottom: 5px;
+      margin-top: 13vh;
+    }
+    #renderData1 h2,h3{
+      font-size: 14px !important;
+    }
+    #renderData2 h2,h3{
+      font-size: 14px !important;
+    }
+    .weatherStatus{
+      margin-top: 12vh !important;
+    }
+    #search{
+      padding-left: 0vw !important;
+    }
+  }
+  #search{
+    border-radius: 16px;
+    width: 43vw;
+    height: 5vh;
+    outline: none;
+    padding-left: 17vw;
+  }
+  .weatherStatus{
+    border-radius: 13px;
+    margin-right: 14vw;
+    margin-left: 14vw;
+    margin-top: 2vh;
+    border: 2px solid white;
+    background: red;
+  }
+ #renderData1 h2,h3{
+    font-size: 2vw;
+  }
+  #renderData2 h2,h3{
+    font-size: 2vw;
+  }
