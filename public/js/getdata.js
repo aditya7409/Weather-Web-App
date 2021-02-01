@@ -9,7 +9,7 @@ const handleClickEvent = async (e) => {
     else {
 
         const cityName = data.value;
-        let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=dda5efaf93ae2397dace35b3f46ef33d`;
+        let url = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&appid=${process.env.API_KEY}`;
         await fetch(url).then(response => {
             return response.json();
         }).then(data => {
